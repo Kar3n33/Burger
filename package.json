@@ -1,0 +1,25 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Burger is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will display the burger on the left side of the page where you can click on the Devour it! button to eat it, once that happens the burger will move to the right side of the page indicating it has been devoured.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kar3n33/Burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kar3n33/Burger/issues"
+  },
+  "homepage": "https://github.com/Kar3n33/Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6",
+    "mysql": "^2.18.1"
+  }
+}
