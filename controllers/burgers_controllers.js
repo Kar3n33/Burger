@@ -24,7 +24,7 @@ router.get("/", function(req, res) {
     });
   });
   
-  router.put("/api/burgers/:id", function(req, res) {
+  router.put("/api/burgers:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
     console.log("condition", condition);
