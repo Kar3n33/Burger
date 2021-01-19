@@ -1,19 +1,34 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+body {
+  background: #afe4d4;
 }
 
-.label {
-  font-weight: bold;
+#row1 {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-left: 350px;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+#row2{
+  margin-left: 470px;
 }
 
-.form-group {
-  margin-bottom: 5px;
+#NewBurger {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 80px;
+  font-size: 25px;
+}
+
+.img-fluid{
+  width: 45%;
+}
+
+#tables{
+  margin-top: 50px;
+  margin-left: 250px;
+}
+
+#button{
+  justify-content: space-between;
+  padding-top: 10px;
 }
