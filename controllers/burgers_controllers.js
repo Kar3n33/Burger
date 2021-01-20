@@ -17,14 +17,14 @@ router.get("/", function(req, res) {
     burger.create([
       "burger_name", "devoured"
     ], [
-      req.body.burger, req.body.devoured
+      req.body.name, false
     ], function(result) {
       // Send back the ID of the new data
       res.json({ id: result.insertId });
     });
   });
   
-  router.put("/api/burgers:id", function(req, res) {
+  router.put("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
     console.log("condition", condition);

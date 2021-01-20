@@ -3,7 +3,7 @@
   <div class="col align-self-center">
     <h1>Eat-Da-Yummy-Burger! (or not)</h1>
   <br>
-  <img src="Burger\public\assets\img\cuteburger.jpg" class="img-fluid" alt="yummy burger">
+  <img src="assets\img\cuteburger.jpg" class="img-fluid" alt="yummy burger">
     </div>
   </div>
 </div>
@@ -16,7 +16,7 @@
 <form class="create-form">
  <div class="form-group"></div>
  <label for="burgername">Burger Name:</label>
- <input type="text" id="burger" name="name" style="height: 18px;">
+ <input type="text" id="addnewburger" name="name" style="height: 18px;">
  <button class="btn btn-secondary btn-sm" type="submit">Add Burger</button>
    </div>
   </form>
@@ -31,7 +31,7 @@
   <h2 class="titles">Burgers patiently waiting to be devoured:</h2>
    {{#each burgers}}
     {{#unless devoured}}
-     {{>burgers/burger-block devoured=false}}
+     {{>burgers/burgerbutton devoured=false}}
     {{/unless}}
    {{/each}}
 </ul>
@@ -40,8 +40,8 @@
  <div class="col-4" id="column2">
   <h2 class="titles">Burgers that have fulfilled their destiny!</h2>
    {{#each burgers}}
-    {{#unless devoured}}
-     {{>burgers/burger-block devoured=true}}
+    {{#if devoured}}
+     {{>burgers/burgerbutton devoured=true}}
     {{/if}}
    {{/each}}
 </ul>
