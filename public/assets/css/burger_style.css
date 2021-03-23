@@ -20,12 +20,13 @@ body {
 }
 
 .img-fluid{
-  width: 45%;
+  width: 35%;
+  margin-left: 135px;
+  margin-right: auto;
 }
 
 #tables{
   margin-top: 50px;
-  margin-left: 250px;
 }
 
 #button{
