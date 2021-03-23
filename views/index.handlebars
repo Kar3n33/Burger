@@ -1,34 +1,35 @@
-<div class="container">
-  <div class="row" id="row1">
-  <div class="col align-self-center">
-    <h1>Eat-Da-Yummy-Burger! (or not)</h1>
+<div class="container-fluid main-container">
+<div class="row justify-content-center">
+<h1 class="title text-center">Eat-Da-Yummy-Burger!</h1>
   <br>
   <img src="assets\img\cuteburger.jpg" class="img-fluid" alt="yummy burger">
     </div>
   </div>
+
+
 </div>
 
-<div class="container">
- <div class="row" id="row2">
- <div class="col align-self-center">
-    <h2 id="NewBurger">Enter A New Burger</h2>
-    
+<div class="container-fluid main-container">
+ <div class="row justify-content-center">
+    <h4 class="title text-center">Enter A New Burger</h4>
+ 
 <form class="create-form">
- <div class="form-group"></div>
+ {{!-- <div class="form-group form-inline justify-content-center"> --}}
+ {{!-- <h4 class="title text-center">Burger Name:</h4> --}}
  <label for="burgername">Burger Name:</label>
- <input type="text" id="addnewburger" name="name" style="height: 18px;">
+ <input type="text" id="addnewburger" name="name">
  <button class="btn btn-secondary btn-sm" type="submit">Add Burger</button>
-   </div>
-  </form>
- </div>
+</form>
 </div>
-</div>
+  </div>
+ </div>  
 
-<div class="container" id="tables">
- <div class="row justify-content-around">
+
+<div class="container-fluid main-container" id="tables">
+ <div class="row justify-content-center">
 
  <div class="col-4" id="column1">
-  <h2 class="titles">Burgers patiently waiting to be devoured:</h2>
+  <h4 class="titles">Burgers patiently waiting to be devoured:</h4>
    {{#each burgers}}
     {{#unless devoured}}
      {{>burgers/burgerbutton devoured=false}}
@@ -38,7 +39,7 @@
 </div>
 
  <div class="col-4" id="column2">
-  <h2 class="titles">Burgers that have fulfilled their destiny!</h2>
+  <h4 class="titles">Burgers that have fulfilled their destiny!</h4>
    {{#each burgers}}
     {{#if devoured}}
      {{>burgers/burgerbutton devoured=true}}

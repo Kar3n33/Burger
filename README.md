@@ -5,8 +5,7 @@ Your app will store every burger in a database, whether devoured or not.
 
 Links to deployed site:
 
-<h4> Github: https://kar3n33.github.io/Burger/ </h4>
-
 <h4> Heroku: https://git.heroku.com/eat-burgerapp.git</h4>
 
 <h4> Video demonstration of application:</h4>
+

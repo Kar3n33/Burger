@@ -1,29 +1,22 @@
 body {
   background: #afe4d4;
 }
-
-#row1 {
-  font-size: 22px;
-  margin-top: 40px;
-  margin-left: 350px;
+#column1 {
+ background: lightseagreen;
+}
+#column2 {
+  background: rgb(126, 209, 126);
 }
 
-#row2{
-  margin-left: 470px;
-}
-
-#NewBurger {
+/* #NewBurger {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 80px;
   font-size: 25px;
-}
-
-.img-fluid{
-  width: 35%;
-  margin-left: 135px;
-  margin-right: auto;
-}
+} */
+.img-fluid {
+  width: 20%;
+ } 
 
 #tables{
   margin-top: 50px;
